@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>My Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>My Portfolio</h1>
+						<p> A showcase of my projects and my abilities</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">My Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="generic.html">About Me</a></li>
+							<li><a href="elements.html">Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/diego-alonso-tordoya-rodriguez-39a1a6120/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.instagram.com/tordoyarda/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/Diego179100" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="mailto:tordoyarda@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+
+						</ul>
+						
+						
+						
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+						<article class="post featured">
+							<header class="major">
+								<span class="date" id="currentDate"></span>
+								<h2><a href="#">Diego Alonso<br />
+									Tordoya Rodriguez</a></h2>
+
+									<style>
+										.twinkle {
+											animation: twinkle 1s infinite;
+										}
+								
+										@keyframes twinkle {
+											0% { opacity: 1; }
+											50% { opacity: 0; }
+											100% { opacity: 1; }
+										}
+									</style>
+									<p id="portfolioText">Welcome to my portfolio!<br>
+										I am a dedicated and enthusiastic <span id="fullStack" style="color: green;">Programmer Analyst</span> with a passion for crafting efficient and innovative solutions.<br>
+										Throughout my career, I have honed my skills in front-end development, including proficiency in HTML, CSS, and JavaScript, as well as experience with frameworks like React.<br>
+										On the back-end, I have expertise in server-side languages such as Node.js and databases like MongoDB.<br>
+										This portfolio showcases some of my most notable projects and experiences, highlighting my commitment to excellence and innovation across the full web development stack.<br>
+										Explore my work and get in touch to discuss how we can collaborate on exciting new opportunities.
+									</p>
+
+						
+								</header>
+								<a href="#" class="image main"><img src="images/Photo1.jpeg" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="docs/Diego's Resume.pdf" download="DiegoAlonsoTordoyaCV.pdf" class="button large">Download my Cv</a></li>
+								</ul>
+						</article>
+						
+
+						
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul>Copyright<li>&copy; 2024. Diego Tordoya</li><li>All rights reserved</li></ul>
+					</div>
+
+					
+
+
+
+			</div>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				// Get the current date
+				var currentDate = new Date();
+			
+				// Format the date as "Month Day, Year"
+				var formattedDate = currentDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+			
+				// Set the formatted date to the element with id "currentDate"
+				document.getElementById('currentDate').innerText = formattedDate;
+			</script>
+			<script>
+				function twinkleText() {
+					const textElement = document.getElementById('fullStack');
+					textElement.classList.add('twinkle');
+				}
+		
+				twinkleText();
+			</script>
+
+	</body>
+</html>
